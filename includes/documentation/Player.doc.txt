@@ -1,0 +1,10 @@
+<--
+	Create a new Player for the game
+	Take new ship(); as private variable for all ship of the current player.
+	SetName() => Set Player name
+	GetName() => Get Player name
+	UpdateShip() => Update ship array which contains all instance of ship();
+	AddShip() => Push a new instance in all ship array
+	interface Player is available with all methods included in it
+
+-->

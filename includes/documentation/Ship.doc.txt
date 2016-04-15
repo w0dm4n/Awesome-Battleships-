@@ -1,0 +1,5 @@
+<--
+	One ship of the game, contains all data for the ship.
+	Contains all weapons instance linked to this ship
+	default ship are generated in the Trait part
+-->

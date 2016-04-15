@@ -1,0 +1,3 @@
+<--
+	Static class for getting current player name or name by ID or reset a ship from a class Player() data
+-->
