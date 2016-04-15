@@ -200,8 +200,10 @@ else
 							{
 								if (Turn::CheckTurn($_SESSION["turn"], $value->GetName()))
 								{
-									$ship->SetCurrentPositionX($_GET["y"]);
-									$ship->SetCurrentPositionY($_GET["x"]);
+									if (isset($_GET["y"]))
+										$ship->SetCurrentPositionX($_GET["y"]);
+									if (isset($_GET["x"]))
+										$ship->SetCurrentPositionY($_GET["x"]);
 									if (isset($_GET["life"]))
 										$ship->SubstractLife($_GET["life"]);
 									if ($_GET["name"] == "Mastodonte")

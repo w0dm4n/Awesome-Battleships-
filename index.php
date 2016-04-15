@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (isset($_GET["unset"]))
+{
+	session_unset();
+	session_destroy();
+}
 require_once("includes/All.php");
 echo <<<START
 <html>
@@ -18,6 +23,7 @@ echo <<<START
 </center>
 </body>
 <footer>
+<center><a href ="?unset">Click here to clear cookie for new game !</a></center>
 </footer>
 </html>
 START;
